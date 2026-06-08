@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon.webp"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MAFIN | Clown Cloe Dubois</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-logo-container">
+        <img class="header-logo" src="./assets/favicon.webp" alt="Mafin" />
+        <h1 class="header-title">#MAFIN</h1>
+      </div>
+
+      <div class="lang-container">
+        <button class="sound-toggle" title="Sesi Aç/Kapat">🔊</button>
+        <span class="divider">|</span>
+        <button class="lang-button es-button active">ES</button>
+        <span class="divider">|</span>
+        <button class="lang-button en-button">EN</button>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="video-container">
+        <img class="slap-video" src="./assets/cloe.png" />
+
+        <div class="speech-bubble">
+          <div class="quote-content" data-i18n="cloe-quote">
+            "Aunque no estemos juntas..."
+          </div>
+          <button class="bubble-play-button">▶ Play</button>
+        </div>
+
+        <img
+          class="clown-makeup accessory"
+          src="./assets/clown-makeup.png"
+          alt="Clown Makeup"
+        />
+        <img
+          class="clown-wig accessory"
+          src="./assets/clown-wig.png"
+          alt="Clown Wig"
+        />
+        <img
+          class="clown-bowtie accessory"
+          src="./assets/clown-bowtie.png"
+          alt="Clown Bowtie"
+        />
+        <img
+          class="clown-nose accessory"
+          src="./assets/clown-nose.png"
+          alt="Clown Nose"
+        />
+
+        <canvas class="splat-canvas"></canvas>
+        <audio class="clown-music" src="./assets/clown-music.mp3" loop></audio>
+        <audio class="tomato-squash" src="./assets/tomato-squash.mp3"></audio>
+      </section>
+
+      <section class="info-container">
+        <div class="options-container">
+          <div class="options-title-container">
+            <span class="options-title" data-i18n="pattern-select-title"
+              >Elige tu patrón:</span
+            >
+          </div>
+          <div class="pattern-buttons-wrapper">
+            <button class="pattern-btn active" data-pattern="fina">FINA</button>
+            <button class="pattern-btn" data-pattern="marta">MARTA</button>
+            <button class="pattern-btn" data-pattern="mafin">MAFIN</button>
+            <button class="pattern-btn heart-btn" data-pattern="heart">
+              ♥️
+            </button>
+          </div>
+        </div>
+        <div class="stats-container">
+          <div class="stat-container">
+            <span class="stat-label" data-i18n="current-stat"
+              >Tus impactos ahora:</span
+            >
+            <span class="stat-value current-slaps">0</span>
+          </div>
+
+          <div class="stat-container">
+            <span class="stat-label" data-i18n="local-total-stat"
+              >Tus impactos totales:</span
+            >
+            <span class="stat-value local-total-slaps">0</span>
+          </div>
+
+          <div class="stat-container global-stat">
+            <span class="stat-label" data-i18n="global-total-stat"
+              >Impactos del mundo:</span
+            >
+            <span class="stat-value global-total-slaps">0</span>
+          </div>
+          <div class="button-container">
+            <button class="slap-button">
+              <span class="button-icon">💄</span>
+              <span class="slap-button-text" data-i18n="slap-button"
+                >¡DALE!</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <p class="thanks-container" data-i18n="thanks-msg">
+        ¡Gracias por vuestro increíble apoyo!
+      </p>
+
+      <p class="footer-text" data-i18n="disclaimer">
+        Nota: Esta página es solo por diversión y va dirigida únicamente al
+        personaje ficticio de Cloe Dubois, no a la actriz Antea Rodríguez. ¡Es
+        que no soportamos a Cloe para nada! <br />
+        (P.D. Os queremos, Alba Brunet y Marta Belmonte. ¡Echamos muchísimo de
+        menos a Alba!)
+      </p>
+      <div class="kofi-container">
+        <a
+          href="https://ko-fi.com/annadewitt125"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="kofi-button"
+          data-i18n="kofi-msg"
+        >
+          ☕ Apoyar a la creadora
+        </a>
+      </div>
+    </footer>
+
+    <div class="marta-flip-container">
+      <div class="marta-flipper">
+        <div class="marta-front">
+          <img
+            class="marta-img"
+            src="./assets/marta.png"
+            alt="Marta Belmonte"
+          />
+        </div>
+        <div class="marta-back">
+          <p class="marta-back-title" data-i18n="marta-title">
+            <strong>A nuestra Reina, Belmonte:</strong>
+          </p>
+          <p class="marta-back-text" data-i18n="marta-text">
+            Gracias por llevar el peso de Mafin con tanto arte.<br />El fandom
+            nunca lo olvidará. 👑
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-modal">
+      <button class="close-modal-button">✖</button>
+      <!-- <div class="video-quote-text">Fina's Quote</div> -->
+      <div class="video-slider-container">
+        <button class="slider-btn prev-btn">❮</button>
+        <video
+          class="fina-video-player popup-video"
+          src="./assets/fina-sarcastic1.mp4"
+          controls
+          playsinline
+        ></video>
+        <button class="slider-btn next-btn">❯</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-check-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+
+    <script src="data.js"></script>
+    <script src="patterns.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
