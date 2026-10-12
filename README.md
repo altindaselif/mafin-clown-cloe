@@ -8,7 +8,7 @@
 ## 🔗 Links
 
 - **Live Site:** [View Live Demo](https://mafinclowncloe.netlify.app/)
-- **Code:** [View GitHub Repository](https://github.com/altindaselif/29-mafin-clown-cloe)
+- **Code:** [View GitHub Repository](https://github.com/altindaselif/mafin-clown-cloe)
 
 ---
 
